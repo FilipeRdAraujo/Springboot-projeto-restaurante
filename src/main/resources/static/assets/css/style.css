@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    --primary-light: #e6e6e6;
+    --primary-dark: #0f0f0f;
+    --nav-dark: #493323;
+    --footer-light: #91684a;
+    --nav-link: #eaac7f;
+}
+
+body{
+    background-color: var(--primary-light);
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: var(--nav-dark);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+    width: inherit;
+    top: 0;
+    left: 0;
+    z-index: 2021;
+    transition: all 0.3s ease-in-out;
+}
+.nav::-webkit-scrollbar(100px){
+    background-color: red;
+}
+
+.nav .nav-item{
+    text-decoration: none;
+    padding: 15px;
+    color: whitesmoke;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.nav .nav-brand{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: whitesmoke;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav img{
+    width: 40px;
+}
+
+.nav-item:hover{
+    color: whitesmoke;
+    background-color: #eaac7f;
+    border-bottom: 1px solid bisque;
+}
+
+#header{
+    background-image: url(../svg/wave.svg), url(../imgs/generic-restaurant.jpg);
+    background-repeat: no-repeat, no-repeat;
+    /* background-position: center, top; */
+    background-position-x: center, center;
+    background-position-y: bottom, center;
+    background-size: cover, cover;
+}
+
+#about-cards{
+    grid-gap: 1em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 330px);
+}
+
+#about-cards i{
+    background-color: var(--footer-light);
+    font-size: xxx-large;
+    padding: 20px;
+    color: var(--primary-light);
+    clip-path: circle();
+}
+
+#footer-wave{
+    background-image: url(../svg/footer-wave.svg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#footer{
+    background-color: var(--footer-light);
+}
+
+.cursive-font{
+    font-family: 'Parisienne', cursive;
+}
+
+.raleway-font{
+    font-family: 'Raleway', sans-serif;
+}
+
+.vh-20{
+    height: 20vh;
+}
+
+.vh-80{
+    height: 80vh;
+}
+
+.grid-center{
+    align-self: center;
+}
+
+.card-style{
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.text-card-shadow{
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.349);
+}
+
+@media only screen and (max-width: 735px) {
+    #nav-brand{
+        display: none;
+    }
+    .card-style {
+        width: 100%;
+        align-self: center;
+    }
+}
