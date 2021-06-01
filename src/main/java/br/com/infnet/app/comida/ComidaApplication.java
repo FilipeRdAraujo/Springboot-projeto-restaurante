@@ -1,14 +1,7 @@
 package br.com.infnet.app.comida;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-
-import br.com.infnet.app.comida.models.Category;
-import br.com.infnet.app.comida.models.Data;
-import br.com.infnet.app.comida.services.ComidaService;
 
 @SpringBootApplication
 //@EnableFeignClients

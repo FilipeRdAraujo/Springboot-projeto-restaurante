@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "categories"
 })
 
-public class Data { //Lista de categorias
+public class Categories { //Lista de categorias
 
     @JsonProperty("categories")
     private List<Category> categories = null;
